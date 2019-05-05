@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: ecc228aba8f7d23458a75e62207b0332
   - enabled: 1
-    path: Assets/Scenes/Working Cube.unity
+    path: Assets/Scenes/2x2.unity
     guid: a89bbb7aa9b56384c80db2d8f1832ad5
+  - enabled: 1
+    path: Assets/Scenes/3x3.unity
+    guid: e5e5a41396c4fd844bf1d9e70aaf43ce
   m_configObjects: {}
