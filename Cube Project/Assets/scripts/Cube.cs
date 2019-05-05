@@ -1,6 +1,8 @@
 ﻿
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
 using System.Collections;
 
 using System.Collections.Generic;
@@ -10,9 +12,9 @@ using System.Collections.Generic;
 public class Cube : MonoBehaviour
 {
 
+    public Camera Camera1;
 
-
-    public Camera[] cameras;
+    public Camera Camera2;
 
     public GUIStyle labelStyle;
 
@@ -40,11 +42,12 @@ public class Cube : MonoBehaviour
 
         if (GUI.Button(new Rect(Screen.width - 112, Screen.height - 40, 80, 25), "Menu"))
 
-            Application.LoadLevel(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
 
 
         // Controla a velocidade de rotaçao das faces do cubo
+        labelStyle.normal.textColor = Color.white;
 
         GUI.Label(new Rect((Screen.width / 2) - 55, 5, 100, 15), "Rotation Speed: " + horizontalSlider, labelStyle);
 
@@ -71,14 +74,16 @@ public class Cube : MonoBehaviour
     {
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
-
-            SelectCamera("Camera1");
-
-
+        {
+            Camera1.enabled = true;
+            Camera2.enabled = false;
+        }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
-
-            SelectCamera("Camera2");
+        {
+            Camera1.enabled = false;
+            Camera2.enabled = true;
+        }
 
 
 
@@ -638,19 +643,19 @@ public class Cube : MonoBehaviour
 
     {
 
-        foreach (Camera camera in this.cameras)
+        //foreach (Camera camera in this.cameras)
 
-        {
+        //{
 
-            if (camera.tag == cameraTag)
+         //   if (camera.tag == cameraTag)
 
-                camera.gameObject.SetActive(true);
+         //       camera.gameObject.SetActive(true);
 
-            else
+         //   else
 
-                camera.gameObject.SetActive(false);
+         //       camera.gameObject.SetActive(false);
 
-        }
+        //}
 
     }
 
