@@ -637,27 +637,5 @@ public class Cube : MonoBehaviour
 
     }
 
-
-
-    private void SelectCamera(string cameraTag)
-
-    {
-
-        //foreach (Camera camera in this.cameras)
-
-        //{
-
-         //   if (camera.tag == cameraTag)
-
-         //       camera.gameObject.SetActive(true);
-
-         //   else
-
-         //       camera.gameObject.SetActive(false);
-
-        //}
-
-    }
-
 }
 
