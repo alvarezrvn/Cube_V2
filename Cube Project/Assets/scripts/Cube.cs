@@ -87,7 +87,7 @@ public class Cube : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.R) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.Y) && !this.rotationLocked)
 
             StartCoroutine(RotateCube('x', 90));
 
@@ -99,13 +99,13 @@ public class Cube : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.Semicolon) && !this.rotationLocked)
 
             StartCoroutine(RotateCube('y', 90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.RightShift) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.A) && !this.rotationLocked)
 
             StartCoroutine(RotateCube('y', -90));
 
@@ -117,79 +117,79 @@ public class Cube : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.E) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.P) && !this.rotationLocked)
 
             StartCoroutine(RotateCube('z', -90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.R) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.J) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("TopFace", 'y', 90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.T) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.F) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("TopFace", 'y', -90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.Y) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.L) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("BottomFace", 'y', 90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.U) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.S) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("BottomFace", 'y', -90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.F) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.D) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("LeftFace", 'x', -90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.G) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.E) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("LeftFace", 'x', 90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.H) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.K) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("RightFace", 'x', -90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.J) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.I) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("RightFace", 'x', 90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.V) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.H) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("FrontFace", 'z', -90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.B) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.G) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("FrontFace", 'z', 90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.N) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.O) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("BackFace", 'z', -90));
 
 
 
-        if (Input.GetKeyDown(KeyCode.M) && !this.rotationLocked)
+        if (Input.GetKeyDown(KeyCode.W) && !this.rotationLocked)
 
             StartCoroutine(RotateFace("BackFace", 'z', 90));
 
