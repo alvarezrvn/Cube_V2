@@ -42,8 +42,10 @@ public class Cube : MonoBehaviour
 
         if (GUI.Button(new Rect(Screen.width - 112, Screen.height - 40, 80, 25), "Menu"))
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene("Menu");
 
+        if (GUI.Button(new Rect(Screen.width - 112, Screen.height - 70, 80, 25), "Reset"))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 
         // Controla a velocidade de rotaçao das faces do cubo
